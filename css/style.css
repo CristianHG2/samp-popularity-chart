@@ -1,0 +1,29 @@
+body
+{
+	background: #2E2E2E;
+	font-family: 'Bebas Neue', sans-serif;
+	color: #E6E6E6;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+	font-size: 30px;
+}
+
+h1
+{
+	color: #D8D8D8;
+	font-size: 300%;
+	margin: 10px 20px 2px 20px;
+}
+
+a 
+{
+	position: relative;
+	bottom: 15px;
+}
+
+.info .content
+{
+	width: 80%;
+	margin-left: 10%;
+	font-size: 25px;
+	margin-right: 10%;
+}
