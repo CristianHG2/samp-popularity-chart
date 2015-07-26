@@ -9,11 +9,6 @@ unset($decode['servernum']);
 
 $string = array();
 
-$svnum = 0;
-
-$highest['name'] = '';
-$highest['score'] = 0;
-
 foreach ( $decode as $i )
 {
 	$totalplayers += $i['players'];
