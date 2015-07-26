@@ -4,6 +4,10 @@ file_put_contents('main.log', 'BEGUN NEW LOG AT '.time().PHP_EOL.'==============
 
 echo PHP_EOL."========== MASTER SERVER BASED ANALYTICS COLLECTOR 1.0 ========".PHP_EOL;
 
+echo "DEFINING CONSTANTS...".PHP_EOL
+
+define('MASTER_SERVER', 'server_list_here');
+
 echo "SETTING TIME LIMIT TO ZERO".PHP_EOL;
 
 set_time_limit(0);
@@ -160,7 +164,7 @@ if ( !file_exists('LAST_TIME') )
 	echo "FIRST TIME RUNNING! CREATING CACHE FILES.".PHP_EOL;
 	echo "DOWNLOADING HOSTED SERVER LIST".PHP_EOL;
 
-	$source = "http://server.sa-mp.com/0.3.7/hosted";
+	$source = MASTER_LIST;
 	$ch = curl_init();
 
 	curl_setopt($ch, CURLOPT_URL, $source);
@@ -192,7 +196,7 @@ else
 		{
 			echo "DOWNLOADING HOSTED SERVER LIST".PHP_EOL;
 
-			$source = "http://server.sa-mp.com/0.3.7/hosted";
+			$source = MASTER_LIST;
 			$ch = curl_init();
 
 			curl_setopt($ch, CURLOPT_URL, $source);
