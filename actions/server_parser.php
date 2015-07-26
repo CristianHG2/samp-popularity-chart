@@ -6,7 +6,7 @@ echo PHP_EOL."========== MASTER SERVER BASED ANALYTICS COLLECTOR 1.0 ========".P
 
 echo "DEFINING CONSTANTS...".PHP_EOL
 
-define('MASTER_SERVER', 'server_list_here');
+define('MASTER_LIST', 'server_list_here');
 
 echo "SETTING TIME LIMIT TO ZERO".PHP_EOL;
 
