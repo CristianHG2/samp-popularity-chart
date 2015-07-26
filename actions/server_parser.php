@@ -32,13 +32,7 @@ function cacheServers()
 	echo "SETTING UP VARIABLES".PHP_EOL;
 
 	$totalplayers = 0;
-
-	$stats = array();
-
-	$stats['highest']['player_num'] = 0;
-	$stats['highest']['server_name'] = '';
-	$stats['highest']['server_ip'] = '';
-
+	
 	$data = array();
 
 	$index = 0;
